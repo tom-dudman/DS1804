@@ -1,0 +1,14 @@
+DS1804	KEYWORD1
+isLocked	KEYWORD2
+getResistance	KEYWORD2
+getWiperPosition	KEYWORD2
+resistanceToWiperPosition	KEYWORD2
+wiperPositionToResistance	KEYWORD2
+resistanceToActualResistance	KEYWORD2
+lock	KEYWORD2
+unlock	KEYWORD2
+write	KEYWORD2
+setToZero	KEYWORD2
+setWiperPosition	KEYWORD2
+overrideWiperPosition	KEYWORD2
+setResistance	KEYWORD2
