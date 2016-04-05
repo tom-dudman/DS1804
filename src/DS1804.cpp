@@ -94,10 +94,10 @@ byte DS1804::resistanceToWiperPosition( unsigned long wantedResistance ) {
 	return map( newResistance, 0, m_maxResistance, 0, m_steps );
 }
 
-unsigned long DS1804::wiperPositionToResistance( byte wantedWiperPosition ) {
-	// work out the resistance
-	//return m_maxResistance * wantedWiperPosition / m_steps;
-	return m_maxResistance * constrain( wantedWiperPosition, 0, m_steps ) / m_steps;
+unsigned long DS1804::wiperPositionToResistance( byte proposedWiperPosition ) {
+	// work out the resistance from a wiper position
+	byte newWiperPosition = constrain( proposedWiperPosition, 0, m_steps );
+	return map( newWiperPosition, 0, m_steps, 0, m_maxResistance );
 }
 
 unsigned long DS1804::resistanceToActualResistance( unsigned long wantedResistance ) {
