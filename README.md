@@ -23,7 +23,7 @@ After installing the library, to use it in a sketch, in the Arduino IDE choose *
 
 ### Constructor
 
-    DS1804( byte CSpin, byte INCpin, byte UDpin, byte maxResistance );
+    DS1804( byte CSpin, byte INCpin, byte UDpin, unsigned long maxResistance );
 
 This function creates a new instance of the DS1804 class that represents a particular DS1804 chip attached to your Arduino board.
 
@@ -31,7 +31,7 @@ This function creates a new instance of the DS1804 class that represents a parti
 
 `CSpin, INCpin, UDpin`: the Arduino pins that are attached to the Chip Select (7), Increment (1) and Up/Down Control (2) pins respectively (*byte*)
 
-`maxResistance`: the maximum resistance of the chip.  The part no can be passed as this argument, or an integer (*byte*)
+`maxResistance`: the maximum resistance of the chip.  The part no (see table below) can be passed as this argument, or an integer (*unsigned long*)
 
 #### Part Nos
 
@@ -39,15 +39,15 @@ The DS1804 is available in three models in three packages
 
 Part No | Max Resistance (ohms) | Package
 ------- | -------------------: | -------
-DS1804_010 | 10 000 | 8-pin DIP
-DS1804Z_010 | 10 000 | 8-pin SO
-DS1804U_010 | 10 000 | 8-pin μSOP
-DS1804_050 | 50 000 | 8-pin DIP
-DS1804Z_050 | 50 000 | 8-pin SO
-DS1804U_050 | 50 000 | 8-pin μSOP
-DS1804_100 | 100 000 | 8-pin DIP
-DS1804Z_100 | 100 000 | 8-pin SO
-DS1804U_100 | 100 000 | 8-pin μSOP
+DS1804_TEN | 10 000 | 8-pin DIP
+DS1804Z_TEN | 10 000 | 8-pin SO
+DS1804U_TEN | 10 000 | 8-pin μSOP
+DS1804_FIFTY | 50 000 | 8-pin DIP
+DS1804Z_FIFTY | 50 000 | 8-pin SO
+DS1804U_FIFTY | 50 000 | 8-pin μSOP
+DS1804_HUNDRED | 100 000 | 8-pin DIP
+DS1804Z_HUNDRED | 100 000 | 8-pin SO
+DS1804U_HUNDRED | 100 000 | 8-pin μSOP
 
 
 ### Getter Functions
