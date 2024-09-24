@@ -8,7 +8,7 @@ The wiper position can be set directly, or a resistance can be requested and the
 
 A number of helper functions are provided to model the characteristics of the DS1804 without having to actually set it first.
 
-A data sheet for DS1804 can be downloaded from here: http://datasheets.maximintegrated.com/en/ds/DS1804.pdf
+A data sheet for DS1804 can be downloaded from here: https://www.analog.com/media/en/technical-documentation/data-sheets/ds1804.pdf
 If this link is broken, a local copy is [here](/extras/DS1804.pdf).
 
 ## Installation
