@@ -1,4 +1,4 @@
-# Arduino.DS1804
+# DS1804 Controller
 
 An Arduino library to control a DS1804.  The DS1804 is a programmable linear potentiometer IC, with 100 positions.  There are 10 k, 50 k and 100 k variants.
 
